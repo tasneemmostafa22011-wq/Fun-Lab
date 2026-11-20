@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>Fun Lab</title>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .jumbotron{
+                background-color: black;
+                color: white;
+                margin: 20px;
+                border-radius: 30px;
+                box-shadow: 4px 6px 8px black;
+            }
+            body{
+                background-color: pink;
+            }
+            .boxs{
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                box-shadow: 5px 7px 9px black;
+                margin: 30px auto;
+                text-align: center;
+            }
+            #box{
+                background-color: white;
+                color: black;
+                border: 6px solid palevioletred;
+                border-radius: 5px;
+                font-size: 20px;
+                width: 180px;
+                height: 120px;
+                margin: 20px auto;
+                padding: 35px;
+            }
+            .text{
+                background-color: palevioletred;
+                border-radius: 8px;
+                padding: 5px;
+                font-size: 17px;
+            }
+            .btn{
+                background-color: palevioletred;
+                color: black;
+                box-shadow: 2px 3px 4px white;
+                margin-right: 5px;
+            }
+            .tas{
+                background-color: black;
+                border: 6px solid palevioletred;
+                color: white;
+                border-radius: 30px;
+            }
+            .glow{
+                box-shadow: 3px 4px 6px white;
+            }
+            .boxs2{
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                box-shadow: 5px 7px 9px black;
+                margin: 30px auto;
+            }
+            .form-control{
+                border-radius: 10px;
+            }
+            #lest{
+                font-weight: 700;
+                font-size: 15px;
+            }
+            #box3{
+                background-color: palevioletred;
+                box-shadow: 3px 4px 6px white;
+                width: auto;
+                margin: 20px;
+                padding: 10px;
+                border-radius: 10px;
+            }
+            .star2{
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="jumbotron text-center">
+            <h1>Fun Lab</h1>
+            <p>Explore, Click, Learn and Create!</p>
+            <h3 style="color: palevioletred; font-weight: 700;">Tasneemty</h3>
+            <p>My Interactive Playground</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 boxs">
+                    <h2 style="color: palevioletred; font-weight: 700;">1. My Magic Box</h2>
+                    <div id="box" class="text-center">Magic Box</div>
+                    <p class="text">Welcome to Fun Lab!</p><br>
+                    <div class="buttons">
+                        <button class="btn" id="big">Bigger</button>
+                        <button class="btn" id="small">Smaller</button>
+                        <button class="btn" id="stop">Stop</button>
+                        <button class="btn" id="reset">Reset</button>
+                    </div><hr>
+                    <div class="buttons">
+                        <button class="btn" id="color">Change Color</button>
+                        <button class="btn" id="tt">Add Class</button>
+                        <button class="btn" id="remove">Remove Class</button>
+                        <button class="btn" id="toggle">Toggle glow</button>
+                    </div><br><br>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5 boxs">
+                    <h2 style="color: palevioletred; font-weight: 700;">2. Magic Effects</h2>
+                    <p>Practice jQuery effects on your box!</p><br>
+                    <button class="btn" id="hide">Hide</button>
+                    <button class="btn" id="show">Show</button>
+                    <button class="btn" id="fade">Fade Toggle</button>
+                    <button class="btn" id="slide">Slide Toggle</button>
+                    <button class="btn" id="callback">Callback</button><br><br>
+                    <button class="btn" id="chaining">Chaining</button><br><br>
+                    <p>Try different effects and watch what happens!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 boxs2">
+                    <h3 style="color: palevioletred; font-weight: 700;">3. Text & Attributes</h3>
+                    <label>Write a new box name:</label>
+                    <input type="text" class="form-control" placeholder="Write anything....." id="input"><br>
+                    <button class="btn" id="set">Set Text</button>
+                    <button class="btn" id="html">Set Html</button>
+                    <button class="btn" id="get">Get Text</button>
+                    <button class="btn" id="text">Get Html</button>
+                    <button class="btn" id="value">Get Value</button><br><br>
+                    <button class="btn" id="title">Change Title</button><br><br>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5 boxs2">
+                    <h3 style="color: palevioletred; font-weight: 700;">4. My Star List</h3>
+                    <ul id="lest">
+                        <li class="star2">Golden Star</li>
+                        <li>Magic Ball</li>
+                        <li>Happy Robot</li>
+                    </ul>
+                    <button class="btn" id="append">Append</button>
+                    <button class="btn" id="prepend">Prepend</button>
+                    <button class="btn" id="before">Before</button>
+                    <button class="btn" id="after">After</button>
+                    <button class="btn" id="remove2">Remove Last</button><br><br>
+                    <button class="btn" id="empty">Empty List</button>
+                    <button class="btn" id="star">Find Star</button><br><br>
+                    <p>Remove deletes an item. Empty clears the list contents.</p><br>
+                </div>
+            </div>
+            <div class="boxs2" style="padding: 20px;">
+                <h2 style="color: palevioletred; font-weight: 700;">5. Box Dimensions</h2>
+                <br><button class="btn" id="measure">Measure My Box</button>
+                <div id="box3">
+                    <h4 id="text2">Click the button to see the box dimensions.</h4>
+                    <div id="secret" style="color: black;" hidden="true">
+                        <p><strong>Width() : </strong><span id="w">-</span>px</p>
+                        <p><strong>Height() : </strong><span id="h">-</span>px</p>
+                        <p><strong>innerWidth() : </strong><span id="inw">-</span>px</p>
+                        <p><strong>innerHeight() : </strong><span id="inh">-</span>px</p>
+                        <p><strong>outerWidth() : </strong><span id="ouw">-</span>px</p>
+                        <p><strong>outerHeight() : </strong><span id="ouh">-</span>px</p>
+                        <p><strong>outerWidth(true) : </strong><span id="tw">-</span>px</p>
+                        <p><strong>outerHeight(true) : </strong><span id="th">-</span>px</p>
+                    </div>
+                </div>
+            </div>
+            <p style="font-size: 15px; font-weight: bold; text-align: center; margin: 60px;">Keep Learning, Keep Coding! Tasneemty</p>
+        </div>
+    </body>
+    <script src="Fun Lab.js"></script>
+</html>
